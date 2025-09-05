@@ -78,7 +78,7 @@ const processQuery = async (userQuery, token) => {
     }
 };
 
-app.post('/chat', async (req, res) => {
+app.post('/code/chat', async (req, res) => {
     try {
         const { message, token } = req.body;
         
@@ -111,7 +111,7 @@ app.post('/chat', async (req, res) => {
     }
 });
 
-app.get('/health', (req, res) => {
+app.get('/code/health', (req, res) => {
     res.json({ status: 'healthy', timestamp: new Date().toISOString() });
 });
 
