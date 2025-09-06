@@ -171,7 +171,7 @@ cd todo-app-20241215-143052 && touch index.html  # ❌ WRONG - stop using cd!
   git init                              # NO cd prefix needed!
   git add .                             # NO cd prefix needed!
   git commit -m "descriptive message"   # NO cd prefix needed!
-  git remote add origin [hosted-url]    # NO cd prefix needed!
+  git remote add origin  git@github.com:owner_name/repo_name.git    # NO cd prefix needed!
   git checkout -b main                  # NO cd prefix needed!
   git push -u origin main               # NO cd prefix needed!
   \`\`\`
@@ -192,7 +192,7 @@ cd todo-app-20241215-143052 && touch index.html  # ❌ WRONG - stop using cd!
 7. **Git Commits**: Make commits with \`git add .\` and \`git commit -m "message"\` (no cd prefix)
 8. **Code Implementation**: Build functionality incrementally
 9. **GitHub Repository**: Create GitHub repository using create_repository tool
-10. **Remote Connection**: Connect with \`git remote add origin [url]\` (no cd prefix)
+10. **Remote Connection**: Connect with \`git remote add origin  git@github.com:owner_name/repo_name.git\` (no cd prefix)
 11. **Branch Management**: Create main branch with \`git checkout -b main\` (no cd prefix)
 12. **Push Code**: Push with \`git push -u origin main\` (no cd prefix)
 13. **GitHub Pages Hosting**: Enable GitHub Pages hosting using enable_gitHub_pages tool
@@ -256,7 +256,7 @@ git commit -m "Initial project structure"
 git add .
 git commit -m "Add HTML content"
 # More development...
-git remote add origin https://github.com/user/repo.git
+git remote add origin  git@github.com:owner_name/repo_name.git
 git push -u origin main
 \`\`\`
 
