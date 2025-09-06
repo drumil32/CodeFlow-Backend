@@ -23,6 +23,9 @@ importers:
       axios:
         specifier: ^1.11.0
         version: 1.11.0
+      cors:
+        specifier: ^2.8.5
+        version: 2.8.5
       dotenv:
         specifier: ^17.2.1
         version: 17.2.1
@@ -685,7 +688,6 @@ snapshots:
     dependencies:
       object-assign: 4.1.1
       vary: 1.1.2
-    optional: true
 
   cross-spawn@7.0.6:
     dependencies:
@@ -888,8 +890,7 @@ snapshots:
 
   negotiator@1.0.0: {}
 
-  object-assign@4.1.1:
-    optional: true
+  object-assign@4.1.1: {}
 
   object-inspect@1.13.4: {}
 

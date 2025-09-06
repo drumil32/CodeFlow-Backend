@@ -2,6 +2,7 @@ import express from 'express';
 import { Agent, run } from '@openai/agents';
 import z from 'zod';
 import crypto from 'crypto';
+import cors from 'cors';
 import 'dotenv/config';
 import { PRODUCT_MANAGER_SYSTEM_PROMPT, DEVELOPER_SYSTEM_PROMPT } from './sys.js';
 import { createRepositoryTool, executeCommandTool, writeInFileTool, enablePagesTool, mainDirectoryCreationTool } from './developerTools.js';
@@ -9,6 +10,7 @@ import { createRepositoryTool, executeCommandTool, writeInFileTool, enablePagesT
 const app = express();
 const port = process.env.PORT || 3000;
 
+app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
